@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:digits="1234567890">
+
+
+    <EditText
+        android:id="@+id/textIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="请输入摄氏温度"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/transfer"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/textOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/out"
+        android:textSize="20sp" />
+</LinearLayout>

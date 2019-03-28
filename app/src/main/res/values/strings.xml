@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Test</string>
+    <string name="in">请输入摄氏度</string>
+    <string name="transfer">转换为华氏温度</string>
+    <string name="out">转换后的值为：</string>
+    <string name="TeamA">TeamA</string>
+    <string name="add_3point">+3POINTS</string>
+    <string name="add_2point">+2POINTS</string>
+    <string name="add_1point">+1POINTS</string>
+    <string name="score">0</string>
+    <string name="reset">RESET</string>
+</resources>
