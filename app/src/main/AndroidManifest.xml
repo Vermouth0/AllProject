@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.swufe.wy.test">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,16 +11,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Temperature">
-
-        </activity>
-        <activity android:name=".ScoreMachine">
+        <activity android:name=".Temperature" />
+        <activity android:name=".ScoreMachine" />
+        <activity android:name=".ScoreMachine2" />
+        <activity android:name=".Rate">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ConfigActivity" />
+        <activity android:name=".RateListActivity" />
+        <activity android:name=".MyList">
+
+        </activity>
+        <activity android:name=".MyList2Activity" >
+        </activity>
+        <activity android:name=".RateCalcActivity" android:theme="@style/Base.Theme.AppCompat.Dialog"></activity>
     </application>
 
 </manifest>

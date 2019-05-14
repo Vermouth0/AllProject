@@ -9,4 +9,18 @@
     <string name="add_1point">+1POINTS</string>
     <string name="score">0</string>
     <string name="reset">RESET</string>
+    <string name="TeamB">TeamB</string>
+
+    <string name="rmb_hint">INPUT RMB</string>
+    <string name="showOut">Result</string>
+    <string name="bDollar_label">Dollar</string>
+    <string name="bEuro_label">Euro</string>
+    <string name="bWon_label">Won</string>
+
+    <string name="toScoreMachine">toScoreMachine</string>
+    <string name="toBaidu">toBaidu</string>
+    <string name="btn_opencfg_label">Config</string>
+    <string name="btn_save_label">Save</string>
+    <string name="set_label">Setting</string>
+    <string name="openList">OpenList</string>
 </resources>

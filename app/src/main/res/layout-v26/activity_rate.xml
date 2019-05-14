@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Rate">
+
+    <EditText
+        android:id="@+id/rmb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:gravity="center_horizontal"
+        android:hint="@string/rmb_hint"
+        android:textSize="26sp"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/showOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="32sp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/bDollar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="onClick"
+        android:text="@string/bDollar_label"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/bEuro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="onClick"
+        android:text="@string/bEuro_label"
+
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/bWon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="onClick"
+        android:text="@string/bWon_label"
+        android:textSize="20sp" />
+
+
+
+    <Button
+        android:id="@+id/btn_opencfg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_opencfg_label"
+        android:layout_marginTop="40dp"
+        android:onClick="openOne"/>
+
+
+</LinearLayout>
