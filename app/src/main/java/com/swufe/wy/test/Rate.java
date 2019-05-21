@@ -175,8 +175,20 @@ public class Rate extends AppCompatActivity implements  Runnable{
             config.putExtra("won_rate_key", wonRate);
             startActivityForResult(config, 1);
         }else if(item.getItemId()==R.id.open_list){
-            Intent list = new Intent(this, MyList2Activity.class);
+           Intent list = new Intent(this, RateListActivity.class);
             startActivity(list);
+            //测试数据库
+            /*RateItem item1=new RateItem("aaa","123");
+            RateManager manager=new RateManager(this);
+            manager.add(item1);
+            manager.add(new RateItem("bbb","23.5"));
+            Log.i(TAG, "onOptionsItemSelected: 写入数据完毕");
+
+            //查询所有数据
+            List<RateItem> testList = manager.listAll();
+            for (RateItem i:testList){
+                Log.i(TAG, "onOptionsItemSelected: 取出数据[id="+i.getId()+"]name="+i.getCurName()+"Rate="+i.getCurRate());
+            }*/
         }
         return super.onOptionsItemSelected(item);
     }
@@ -275,12 +287,14 @@ public class Rate extends AppCompatActivity implements  Runnable{
             //获取td中的数据
             Elements tds =table1.getElementsByTag("td");
 
+
             for(int j=0;j<tds.size();j+=6) {
                 Element td1=tds.get(j); //td1:汇率名；td2：数值
                 Element td2=tds.get(j+5);
                 //Log.i(TAG,"run:"+td1.text()+"==>"+td2.text());
                 String str1=td1.text();
                 String val=td2.text();
+
 
                 if("美元".equals(str1)){
                     bundle.putFloat("dollar_rate",Float.parseFloat(val)/100f);
